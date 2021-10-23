@@ -18,7 +18,7 @@ app.get('/account', (req, res) => {
     res.sendFile(__dirname + '/express/account.html');
 })
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 var listener = app.listen(port, function() {
     console.log('Server listening on port ' + port);

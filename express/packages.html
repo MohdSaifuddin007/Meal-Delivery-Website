@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Meal delivery Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/logo.jpg" type="image/icon type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
+<script type = "text/javascript" src="itemsdata.js"></script>
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+    <div class="w3-bar w3-card" style="color:#fff; background-color: #588715;">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="/"><img src="images/logo.jpg" style="height:8vh; float: left; padding-left: 1vw;"></a>
+        <a href="/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="/packages" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEALS PACKAGE</a>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search" style="font-size: 20px;"></i></a>
+        <a href="/account" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right"><i class="fa fa-user" style="font-size: 22px;"></i></a>
+    </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="/packages" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MEALS PACKAGE</a>
+    <a href="/account" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-user"></i></a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+        <!-- Hero section -->
+        <div style="background-image: url('images/mealspackage.jfif'); height: 480px; background-size: contain; margin-top: -50px; background-repeat: no-repeat;">
+            <p style="color: crimson; font-size: 50px; top: 55%; left: 35%; position: absolute;"><strong>Our meal packages</strong></p>
+        </div>
+
+        <!-- Content section -->
+        <p style="color: #191919; font-size: 20px; text-align: center; margin-top: 50px; margin-bottom: 30px;">Pick a package, choose your meals, achieve your goal - <strong><i>it's that easy!</i></strong></p>
+        <hr>
+
+    <!-- Meals Package Section -->
+    <div class="w3-container w3-content w3-center" style="max-width:1000px">
+        <div class="w3-row">
+        <div class="w3-row-padding" style="margin:0 -16px; margin-bottom: 10px;">
+            <div class="w3-quarter w3-margin-bottom">
+            <img src="images/package1.jpg" alt="Meal1" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Weight Loss</b></p>
+                <p>High protein, low-calorie meals with a nutrient profile tuned for weight loss</p>
+                <button name="Weight Loss" class="w3-button" style="background: crimson; color: #fff;" onclick="clickFunction(this)">Choose meals &rarr;</button>
+                <p style="color: #191919"><i>from </i><b>$8/meal</b></p>
+            </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+            <img src="images/package2.jpg" alt="Meal2" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Muscle Gain</b></p>
+                <p>Higher protein and calorie portions to support your muscle gain momentum</p>
+                <button name="Muscle Gain" class="w3-button" style="background: crimson; color: #fff;" onclick="clickFunction(this)">Choose meals &rarr;</button>
+                <p style="color: #191919"><i>from </i><b>$8/meal</b></p>
+            </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+            <img src="images/package3.jpg" alt="Meal3" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Keto</b></p>
+                <p>High fat, low carb meals with moderate protein to achieve and sustain ketosis</p>
+                <button name="Keto" class="w3-button" style="background: crimson; color: #fff;" onclick="clickFunction(this)">Choose meals &rarr;</button>
+                <p style="color: #191919"><i>from </i><b>$8/meal</b></p>
+            </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <img src="images/package4.jpg" alt="Meal4" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Fat Burner</b></p>
+                    <p>Low carb, nutrient-rich meals with fat-burning profiles to support fat loss</p>
+                    <button name="Fat Burner" class="w3-button" style="background: crimson; color: #fff;" onclick="clickFunction(this)">Choose meals &rarr;</button>
+                <p style="color: #191919"><i>from </i><b>$12/meal</b></p>
+                </div>
+            </div>
+            </div></div>
+
+            <div class="w3-row">
+                <div class="w3-row-padding" style="margin:0 -16px; margin-bottom: 10px;">
+            <div class="w3-quarter w3-margin-bottom">
+                <img src="images/package5.jpg" alt="Meal5" style="width:100%; border-radius: 1%;" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Vegan</b></p>
+                    <p>A fully plant-based vegan collection featuring no animal products</p>
+                    <button class="w3-button" style="background: crimson; color: #fff;" onclick="">Choose meals &rarr;</button>
+                <p style="color: #191919"><i>from </i><b>$8/meal</b></p>
+                </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <img src="images/package6.jpg" alt="Meal6" style="width:100%; border-radius: 1%;" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Veggie</b></p>
+                    <p>A vegetarian-friendly collection with a natural and nutrient-rich approach</p>
+                    <button class="w3-button" style="background: crimson; color: #fff;" onclick="">Choose meals &rarr;</button>
+                <p style="color: #191919"><i>from </i><b>$8/meal</b></p>
+                </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <img src="images/package7.jpg" alt="Meal7" style="width:100%; border-radius: 1%;" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Gluten Free</b></p>
+                    <p>A gluten-free collection with the same balanced profile as our other packages</p>
+                    <button class="w3-button" style="background: crimson; color: #fff;" onclick="">View package &rarr;</button>
+                <p style="color: #191919"><i>from </i><b>$8/meal</b></p>
+                </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <img src="images/package8.jpg" alt="Meal8" style="width:100%; border-radius: 1%;" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Prebiotic Soup Cleanse</b></p>
+                    <p>A protein-packed meal and two superb prebiotic soups per day for up to 14 days</p>
+                    <button class="w3-button" style="background: crimson; color: #fff;" onclick="">View cleanse &rarr;</button>
+                <p style="color: #191919"><i>from </i><b>$8/meal</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="mealpackages" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-3" style="width: 880px; margin-top: -70px;">
+                <header class="w3-container w3-center w3-padding-24" style="color: #fff; background-color: #588715;"> 
+                    <span onclick="document.getElementById('mealpackages').style.display='none'" 
+                class="w3-button w3-xlarge w3-display-topright" style="background-color: #588715; color: #fff;">×</span>
+                    <h2 id="package-title" class="w3-wide"></h2>
+                </header>
+            <div class="w3-row" style="margin: 0 50px;">
+                <div id="mealsgrid" class="w3-row-padding w3-padding-24 w3-center">
+                    <!-- <div class="w3-quarter">
+                    <img src="images/meal1.jpg" alt="Meal1" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Chicken Teriyaki</b></p>
+                        <p class="w3-opacity" style="color: #588715;"><b>$11.95</b></p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="">Add to Cart</button>
+                    </div>
+                    </div>
+                    <div class="w3-quarter">
+                    <img src="images/meal2.jpg" alt="Meal2" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Butter Chicken with Mixed Vegetables</b></p>
+                        <p class="w3-opacity" style="color: #588715;"><b>$11.95</b></p>
+                        <button class="w3-button w3-black w3-margin-bottom" onclick="">Add to Cart</button>
+                    </div>
+                    </div>
+                        <div class="w3-quarter">
+                        <img src="images/meal3.jpg" alt="Meal3" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Sundried Tomato and Basil Pesto Chicken Linguini</b></p>
+                            <p class="w3-opacity" style="color: crimson;"><b><i>$10.76</i></b></p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="">Add to Cart</button>
+                        </div>
+                        </div>
+                        <div class="w3-quarter">
+                            <img src="images/meal4.jpg" alt="Meal4" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Roast Chicken and Homemade Pan Gravy</b></p>
+                                <p class="w3-opacity" style="color: #588715;"><b>$11.95</b></p>
+                                <button class="w3-button w3-black w3-margin-bottom" onclick="">Add to Cart</button>
+                            </div>
+                        </div> -->
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">2021 &copy Saifuddin Mohammed</p>
+    </footer>
+
+    <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    }
+
+    function clickFunction(clicked_object) {
+        var name = clicked_object.getAttribute('name')
+        name = String(name)
+        var package = document.getElementById('mealpackages')
+        package.style.display='block'
+        document.getElementById('package-title').innerHTML = name.toUpperCase()
+        var grid = document.getElementById('mealsgrid')
+        while(grid.firstChild) {
+            grid.removeChild(grid.firstChild)
+        }
+        for(var i=0; i<data.length; i++) {
+            if(data[i].category === name){
+                var quarter = document.createElement('div')
+                quarter.setAttribute('id', "item"+data[i].itemNumber)
+                quarter.setAttribute('class', 'w3-third')
+
+                var img = document.createElement("img")
+                var src = data[i].image
+                img.setAttribute('src', src)
+                img.setAttribute('id', "item"+data[i].itemNumber)
+                img.setAttribute('class', 'w3-hover-opacity')
+                img.style.width = '90%'
+                quarter.appendChild(img)
+
+                var container = document.createElement("div")
+                container.setAttribute('class', 'w3-contaner w3-white')
+
+                var title = document.createElement('p')
+                title.appendChild(document.createElement("b"))
+                title.textContent = data[i].name
+                container.appendChild(title)
+
+                var price = document.createElement("p")
+                price.setAttribute('class', 'w3-opacity')
+                price.style.color = '#588715'
+                price.appendChild(document.createElement("b"))
+                price.textContent = data[i].price
+                container.appendChild(price)
+
+                var but = document.createElement("button")
+                but.setAttribute('class', 'w3-button w3-black w3-margin-bottom')
+                but.textContent = 'Add to Cart'
+                container.appendChild(but)
+
+                quarter.appendChild(container)
+                grid.appendChild(quarter)
+            }
+        }
+    }
+
+    var modal = document.getElementById('mealpackages');
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+    </script>
+
+    </body>
+</html>

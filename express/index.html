@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Meal delivery Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/logo.jpg" type="image/icon type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+    <div class="w3-bar w3-card" style="color:#fff; background-color: #588715;">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="/"><img src="images/logo.jpg" style="height:8vh; float: left; padding-left: 1vw;"></a>
+        <a href="/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="/packages" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEALS PACKAGE</a>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search" style="font-size: 20px;"></i></a>
+        <a href="/account" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right"><i class="fa fa-user" style="font-size: 22px;"></i></a>
+    </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="/packages" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MEALS PACKAGE</a>
+    <a href="/account" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-user"></i></a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+        <!-- Hero section -->
+        <div style="background-image: url('images/top-image.jpg'); margin-top: -50px; height: 700px; background-position-x: right; background-repeat: no-repeat;">
+            <p style="color: #588715; font-size: 50px; top: 28%; left: 10%; position: absolute; text-align: center; text-shadow: 3px 2px lightgrey;">Meals and Grocery </br>delivered.</p>
+            <br>
+            <a href="/packages" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="color: crimson !important; border: crimson 1.5px solid; top: 64%; left: 18.4%; position: absolute; font-size: 22px;">View packages</a>
+        </div>
+
+        <!-- Content section -->
+        <p style="color: crimson; font-size: 30px; text-align: center; margin-top: -6px;"><strong>No cooking, just eating.</strong></p>
+        <div style="display: grid; grid-template-columns: repeat(4, 13rem); grid-column-gap: 7rem; margin: 0 10rem; text-align: center;">
+            <span><img src="images/pick.jpg" style="width: 90%" class="w3-hover-opacity"><h4><strong>Pick</strong></h4><p>100+ menu of all natural dishes.</p></span>
+            <span><img src="images/heat.jpg" style="width: 90%" class="w3-hover-opacity"><h4><strong>Heat</strong></h4><p>Cooked & delivered.</p></span>
+            <span><img src="images/eat.jpg" style="width: 90%" class="w3-hover-opacity"><h4><strong>Eat</strong></h4><p>Delicious & nutricious.</p></span>
+            <span><img src="images/repeat.jpg" style="width: 90%" class="w3-hover-opacity"><h4><strong>Repeat</strong></h4><p>Skip a week or cancel any time.</p></span>
+        </div>
+
+    <!-- Meals Package Section -->
+    <div class="w3-container w3-content w3-center" style="max-width:1000px">
+        <p style="color: #588715; font-size: 30px; text-align: center; margin-bottom: -1px;"><strong>Our chefs are making these right now!</strong></p>
+        <p class="w3-opacity" style="margin-bottom: -15px;">You should be chowing down on any of these meals any time you choose - <i>seriously!</i></p>
+        <p class="w3-opacity">Order some (or all) of these meals and see why thousands of Canadians stock us in their fridge!</p>
+        <div class="w3-row">
+        <div class="w3-row-padding w3-padding-24" style="margin:0 -16px">
+            <div class="w3-quarter w3-margin-bottom">
+            <img src="images/meal1.jpg" alt="Meal1" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Chicken Teriyaki</b></p>
+                <p class="w3-opacity" style="color: #588715;"><b>$11.95</b></p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="">Add to Cart</button>
+            </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+            <img src="images/meal2.jpg" alt="Meal2" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Butter Chicken with Mixed Vegetables</b></p>
+                <p class="w3-opacity" style="color: #588715;"><b>$11.95</b></p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="">Add to Cart</button>
+            </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+            <img src="images/meal3.jpg" alt="Meal3" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Sundried Tomato and Basil Pesto Chicken Linguini</b></p>
+                <p class="w3-opacity" style="color: crimson;"><b><i>$10.76</i></b></p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="">Add to Cart</button>
+            </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <img src="images/meal4.jpg" alt="Meal4" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Roast Chicken and Homemade Pan Gravy</b></p>
+                    <p class="w3-opacity" style="color: #588715;"><b>$11.95</b></p>
+                    <button class="w3-button w3-black w3-margin-bottom" onclick="">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">2021 &copy Saifuddin Mohammed</p>
+    </footer>
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    }
+    </script>
+
+    </body>
+</html>
